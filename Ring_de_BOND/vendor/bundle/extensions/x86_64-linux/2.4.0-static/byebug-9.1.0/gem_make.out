@@ -1,0 +1,19 @@
+current directory: /home/yuki/amore/softwaretec-Amore/Ring_de_BOND/vendor/bundle/gems/byebug-9.1.0/ext/byebug
+/home/yuki/.rbenv/versions/2.4.2/bin/ruby -r ./siteconf20171222-2876-rhum5x.rb extconf.rb
+creating Makefile
+
+current directory: /home/yuki/amore/softwaretec-Amore/Ring_de_BOND/vendor/bundle/gems/byebug-9.1.0/ext/byebug
+make "DESTDIR=" clean
+
+current directory: /home/yuki/amore/softwaretec-Amore/Ring_de_BOND/vendor/bundle/gems/byebug-9.1.0/ext/byebug
+make "DESTDIR="
+compiling breakpoint.c
+compiling byebug.c
+compiling context.c
+compiling locker.c
+compiling threads.c
+linking shared-object byebug/byebug.so
+
+current directory: /home/yuki/amore/softwaretec-Amore/Ring_de_BOND/vendor/bundle/gems/byebug-9.1.0/ext/byebug
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 byebug.so ./.gem.20171222-2876-11ykqup/byebug
