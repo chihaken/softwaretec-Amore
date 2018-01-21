@@ -1,0 +1,36 @@
+<center>
+<p>
+<span style="vertical-align:-140%"> <%= image_tag 'rogo.png', class: 'rogo2' %> </span>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+<span style="vertical-align:400%"><span style="border: 2px solid; padding: 40px 40px 40px 40px"> <%= @user.uName %> </span>
+</p>
+
+<u>
+<p>
+<%= image_tag 'goods.peg', class: 'face' %>
+&emsp;
+<%= @user.good %>
+&emsp;
+<%= image_tag 'good.png', class: 'face' %>
+&emsp;
+<%= @user.nor %>
+&emsp;
+<%= image_tag 'goods.png', class: 'face' %>
+&emsp;
+<%= @user.bad %>
+</p>
+</u>
+
+<p>
+<center>
+<table class="table1" border="1" >
+ <tr><th> profile </th></tr>
+ <tr><td> 趣味: <%= @user.hobby %> </td></tr>
+ <tr><td> 興味: <%= @user.interest %> </td></tr>
+ <tr><td> 夢: <%= @user.dream %> </td></tr>
+ <tr><td> <%= @user.free %> </td></tr>
+</table>
+</center>
+</p>
+
+<center> <%= link_to 'リストに戻る', messages_path %> </center>

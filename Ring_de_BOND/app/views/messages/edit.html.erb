@@ -1,0 +1,11 @@
+<center>
+<h1> <span style="border: 2px solid; padding: 10px 20px 10px 20px"> メッセージ </h1>
+
+<p> 日時 <input type="text" name="example1"> </p>
+<p> 場所 <input type="text" name="example2"> </p>
+<p> コメント(50文字以内) <br>
+<textarea name="example" cols="20" rows="3" maxlength="50" ></textarea> </p>
+
+<p> <%= link_to submit_tag("送信する"), messages_path, data: {confirm: '送信できました'} %> </p>
+
+</center>

@@ -1,0 +1,17 @@
+<center>
+<h1> <span style="border: 2px solid; padding: 10px 20px 10px 20px"> メッセージ </h1>
+
+<p> 日時 <%= @user.time %> </p>
+<p> 場所 <%= @user.prace %> </p>
+<p> コメント(50文字以内) <br>
+<textarea name="example" cols="20" rows="3" maxlength="50" ></textarea> </p>
+
+<p> <%= image_tag 'goods.peg', class: 'face' %>
+&emsp;
+<%= image_tag 'good.png', class: 'face' %>
+&emsp;
+<%= image_tag 'goods.png', class: 'face' %>
+&emsp;
+<%= link_to submit_tag("返信する"), show2_messages_path, data: {confirm: '送信できました'} %> </p>
+
+</center>

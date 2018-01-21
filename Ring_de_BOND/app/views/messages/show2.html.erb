@@ -1,0 +1,15 @@
+<p>
+<center>
+<table class="table1" border="1">
+ <tr>
+    <td bgcolor="#00ffff"> 受信 </td><td> <%= link_to '送信済み', show3_messages_path %> </td>
+    <% @accounts.each do |user| %>
+    <tr><td colspan="2"> <span style="vertical-align:-140%"> <%= image_tag 'rogo.png', class: 'rogo' %> </span>
+                         &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                         <span style="border: 2px solid; padding: 20px 20px 20px 20px"> <%= link_to user.uName, show4_messages_path %> </span> </td></tr>
+    <% end %>
+ </tr>
+</table>
+
+</center>
+</p>

@@ -1,0 +1,17 @@
+<p>
+<center>
+<table class="table1" border="1">
+ <tr>
+    <td> <%= link_to '受信', show2_messages_path(@user) %> </td><td bgcolor="#00ffff"> 送信済み </td>
+    <% @accounts.each do |user| %>
+    <tr><td colspan="2"> <span style="vertical-align:-140%"> <%= image_tag 'rogo.png', class: 'rogo' %> </span>
+                         &emsp;
+                         <span style="border: 2px solid; padding: 20px 20px 20px 20px"> <%= user.uName %> </span>
+                         &emsp;
+                         <span style="border: 2px solid; padding: 10px 10px 10px 10px"> 取り下げ </span> </td></tr>
+    <% end %>
+ </tr>
+</table>
+
+</center>
+</p>
