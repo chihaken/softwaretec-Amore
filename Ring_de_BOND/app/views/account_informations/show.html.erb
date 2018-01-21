@@ -1,0 +1,57 @@
+    <div class="container-fluid" style="background-color:#EDF7FF;">
+      <div class="navbar-header">
+
+<%= link_to image_tag("rogo.png", alt: "Ring De BOND logo", width: "80px", height: "70px"), 'http://rubyonrails.org/' %>
+<div style="margin-left:auto; width:150px;">       
+  <%= link_to "ログアウト", logout_path, method: :delete %>
+</div>
+</div> 
+<div onclick="obj=document.getElementById('open').style; obj.display=(obj.display=='none')?'block':'none';">
+
+              
+                
+               <div style="margin-left:auto; width:150px;">       
+          <a style="cursor:pointer;"> メニュー </a>
+          <div id="open" style="display:none;clear:both;">	
+            <li><%= menu_link_to "TOP", '#' %></li>
+	     <li><%= menu_link_to "リスト", '#' %></li>
+            <li><%= menu_link_to "アカウント設定", edit_account_information_path(current_user) %></li>
+            <li><%= menu_link_to "メッセージリスト", '#' %></li>
+            <li><%= menu_link_to "お問い合わせ", '#' %></li>
+            <li><%= menu_link_to "ログアウト", '#'%></li>
+            <p class="navbar-text navbar-right">ようこそ <a href="#" class="navbar-link"><%= @user.uName %></a> さん。</p> 
+          </div>
+        </div>
+</div>
+</div>
+</div>
+
+<center>
+<table>
+<caption>Profile
+<tr>
+<td>趣味</td> 
+<td><%= @user.hobby %></td>
+</tr>
+<tr>
+<td>興味分野</td>
+<td><%= @user.interest %></td>
+</tr>
+<tr>
+<td>夢</td>
+<td><%= @user.dream %></td>
+</tr>
+</table>
+<br>
+
+フリーコメント
+<table>
+<tr>
+<td>
+<% text= @user.free%>
+<%= simple_format(text) %>
+</td>
+</tr>
+</table>
+<center>
+
