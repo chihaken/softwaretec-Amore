@@ -1,24 +1,5 @@
 <% provide(:title, "Edit user") %>
-    <div class="container-fluid" style="background-color:#EDF7FF;">
-      <div class="navbar-header">
-        <%= link_to image_tag("rogo.png", alt: "Ring De BOND logo", width: "80px", height: "70px"), 'http://rubyonrails.org/' %>
-</div> 
-<div onclick="obj=document.getElementById('open').style; obj.display=(obj.display=='none')?'block':'none';">
-        <div style="margin-left:auto; width:150px;">
-          <a style="cursor:pointer;"> メニュー </a>
-          <div id="open" style="display:none;clear:both;">	
-            <li><%= menu_link_to "TOP", '#' %></li>
-	    <li><%= menu_link_to "リスト", '#' %></li>
-            <li><%= menu_link_to "アカウント設定", '#' %></li>
-            <li><%= menu_link_to "メッセージリスト", '#' %></li>
-            <li><%= menu_link_to "お問い合わせ", '#' %></li>
-            <li><%= menu_link_to "ログアウト", '#' %></li>
-            <p class="navbar-text navbar-right">ようこそ <a href="#" class="navbar-link"><%= @user.uName %></a> さん。</p> 
-          </div>
-        </div>
-</div>
-</div>
-</div>
+
 <center>
 <h1>アカウント設定</h1>
 

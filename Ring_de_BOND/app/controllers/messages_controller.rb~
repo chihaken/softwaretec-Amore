@@ -1,5 +1,4 @@
 class MessagesController < ApplicationController
-layout 'secound_layout'
   def show
     @user =  AccountInformation.find_by(:id => params[:id])
   end

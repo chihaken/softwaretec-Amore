@@ -9,15 +9,15 @@
 <p>
 <%= image_tag 'goods.peg', class: 'face' %>
 &emsp;
-<%= @user.id %>
+<%= @user.good %>
 &emsp;
 <%= image_tag 'good.png', class: 'face' %>
 &emsp;
-<%= @user.id %>
+<%= @user.nor %>
 &emsp;
 <%= image_tag 'goods.png', class: 'face' %>
 &emsp;
-<%= @user.id %>
+<%= @user.bad %>
 </p>
 </u>
 

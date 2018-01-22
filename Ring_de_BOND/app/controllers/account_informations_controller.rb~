@@ -1,5 +1,5 @@
 class AccountInformationsController < ApplicationController 
-layout 'secound_layout'
+
   def show
     @user = AccountInformation.find(params[:id])
   end

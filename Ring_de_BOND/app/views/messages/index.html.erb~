@@ -1,0 +1,33 @@
+<hr>
+<p>
+<center>
+<span style="vertical-align:-140%"> <%= image_tag 'rogo.png', class: 'rogo' %> </span>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+<span style="border: 2px solid; padding: 20px 20px 20px 20px"> <%= link_to @user.uName, messages_show_path(@user) %> </span>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+<span style="border: 2px solid; padding: 20px 20px 20px 20px"> <%= link_to 'メッセージ', edit_message_path(@user) %> </span>
+</center>
+</p>
+
+<hr>
+<p>
+<center>
+<span style="vertical-align:-140%"> <%= image_tag 'rogo.png', class: 'rogo' %> </span>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+<span style="border: 2px solid; padding: 20px 20px 20px 20px"> <%= link_to @user1.uName, message_path(@user1) %> </span>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+<span style="border: 2px solid; padding: 20px 20px 20px 20px"> <%= link_to 'メッセージ', edit_message_path(@user) %> </span>
+</center>
+</p>
+
+<hr>
+<p>
+<center>
+<span style="vertical-align:-140%"> <%= image_tag 'rogo.png', class: 'rogo' %> </span>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+<span style="border: 2px solid; padding: 20px 20px 20px 20px"> <%= link_to @user2.uName, message_path(@user2) %> </span>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+<span style="border: 2px solid; padding: 20px 20px 20px 20px"> <%= link_to 'メッセージ', edit_message_path(@user) %> </span>
+</center>
+</p>
+<hr>

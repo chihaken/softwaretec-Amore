@@ -13,34 +13,3 @@
  *= require_tree .
  *= require_self
  */
-.rogo {
-  width: 70px;
-  height: 70px;
-}
-
-.rogo2 {
-  width: 210px;
-  height: 210px;
-}
-
-.face {
-  width: 30px;
-  height: 30px;
-}
-
-.table1 {
-  border-collapse:collapse;
-  width: 400px;
-}
-
-.table1 th, .table1 td {
-  border: 1px colid gray;
-}
-
-.content {
-  display: none;
-}
-
-.content:target {
-  display: block;
-}
