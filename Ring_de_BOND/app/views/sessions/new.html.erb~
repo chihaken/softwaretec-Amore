@@ -11,7 +11,7 @@
     <%= form_for(:session, url: login_path) do |f| %>
 
       <%= f.label :アカウントＩＤ%>
-      <%= f.text_field :accountId, class: 'form-control' %><br>
+      <%= f.text_field :accountId, class: 'form-control' %>
 
       <%= f.label :パスワード %>
       <%= f.password_field :password, class: 'form-control' %>
